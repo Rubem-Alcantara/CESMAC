@@ -65,10 +65,6 @@ falha =''
 formato = 'utf-8'
 while True:
     window,eventos,valores = sg.read_all_windows()
-    # Quando janela for fechada
-    if window == janela1 and eventos == sg.WINDOW_CLOSED:
-        cliente.close()
-        break
     # Quando queremos ir para próximo janela
     while logado == False:
         if window == janela1 and eventos == '  Sair  ' in eventos == sg.WINDOW_CLOSED:
